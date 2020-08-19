@@ -37,13 +37,13 @@
             android:background="#000000"
             android:padding="15dp">
             <View
-                android:id="@id/view3"
+                android:id="@+id/view3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:background="#00FF00"/>
 
             <View
-                android:id="@id/view4"
+                android:id="@+id/view4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="100dp"
