@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <View
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#000000"
+        />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF0000"
+        android:layout_below="@id/view1"
+        />
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/view2"
+        android:background="#00FF00"
+        android:orientation="horizontal"
+        android:padding="30dp">
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="100dp"
+            android:background="#0000FF"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:padding="15dp">
+            <View
+                android:id="@id/view3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#00FF00"/>
+
+            <View
+                android:id="@id/view4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100dp"
+                android:background="#FF0000"
+                android:layout_toRightOf="@id/view3"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
