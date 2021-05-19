@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnEditText;
     private Button mBtnRadioButtion;
     private Button mBtnCheckBox;
+    private Button mBtnImageVew;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnEditText = findViewById(R.id.btn_edittext);
         mBtnRadioButtion = findViewById(R.id.btn_radiobutton);
         mBtnCheckBox = findViewById(R.id.btn_checkbox);
+        mBtnImageVew = findViewById(R.id.btn_imageview);
         setListeners();
     }
     private void setListeners(){
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnEditText.setOnClickListener(onclik);
         mBtnRadioButtion.setOnClickListener(onclik);
         mBtnCheckBox.setOnClickListener(onclik);
+        mBtnImageVew.setOnClickListener(onclik);
     }
     private class Onclik implements View.OnClickListener{
         @Override
@@ -58,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_checkbox:
                     //跳转到CheckBox演示界面
                     intent = new Intent(MainActivity.this,CheckBoxActivity.class);
+                    break;
+                case R.id.btn_imageview:
+                    //跳转到ImageView演示界面
+                    intent = new Intent(MainActivity.this,ImgViewActivity.class);
                     break;
             }
             startActivity(intent);
